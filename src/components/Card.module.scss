@@ -1,0 +1,63 @@
+.card{
+  background-color: #FFF;
+  border-radius: 5px;
+  height: 328px;
+  margin: 0 16px 16px;
+  max-width: 240px;
+  width: 100%;
+
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+  }
+
+  &Cover{
+    background-color: #ABBBCC;
+    border-radius: 5px 5px 0px 0px;
+    height: 160px;
+    width: 100%;
+  }
+
+  &Infos{
+    padding: 16px;
+    h2{
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      white-space: nowrap;
+    }
+
+    .movieTime{
+      font-size: 14px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    .moviesOscars{
+      display: grid;
+      grid-template-columns: 20px 200px 1fr;
+      img{
+        margin: auto 10px auto auto;
+        height: 20px;
+      }
+      p{
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+
+    .budgetAndRevenue{
+      margin-top: 15px;
+      display: flex;
+      div{
+        width: 50%;
+        p{
+          font-size: 12px;
+          margin: 0;
+          &.title{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
